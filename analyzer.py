@@ -5,8 +5,11 @@ from decimal import Decimal
 #path to inbox directory
 inbox_dir = '/Users/audreycui01/dev/messenger_stats/inbox/'
 reax_conversion = {"\u00f0\u009f\u0098\u0086": "laugh", "\u00e2\u009d\u00a4": "heart", "\u00f0\u009f\u0098\u00a2":"sad", "\u00f0\u009f\u0091\u008d": "like", "\u00f0\u009f\u0098\u00ae": "wow", "\u00f0\u009f\u0091\u008e": "dislike", "\u00f0\u009f\u0098\u00a0": "angry"}
+
+#this method doesnt rly work yet :p
 def analyze_all():
     all_dir = listdir(inbox_dir)
+    print(all_dir)
     for dir in all_dir:
         print(dir)
         analyze(dir)
@@ -40,7 +43,6 @@ def analyze(dir):
             ppl_arr[actor_index]["total_reax"] += 1
         except KeyError:
             x=0 #do nothing lol
-
     i=0
 
     #raw numbers
@@ -48,6 +50,7 @@ def analyze(dir):
         print(rev_ppl_dict[i])
         print(a)
         i+=1
+
 
     i=0
     #frequency
@@ -64,9 +67,9 @@ def analyze(dir):
         i+=1
 
 
+#analyze_all()
 
-
-
+analyze("AllenLi_DTkZUbw4eQ") 
 
 
 
