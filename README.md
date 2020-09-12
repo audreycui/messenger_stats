@@ -1,5 +1,5 @@
-# messenger_stats
-random useless stats for fb messenger messages! 
+# Messenger Stats
+random stats for fb messenger messages! 
 work in progress, please excuse my inelegant code. 
 
 
