@@ -35,7 +35,7 @@ def analyze(dir): #get reaccs stats for convo with one person
         i += 1
 
     for msg_file in all_msg: #iterate thru all message files to count reaccs
-        if msg_file.find("message") >= 0 and msg_file.find("message_1") <0:
+        if msg_file.find("message") >= 0:
 
             messages = data["messages"]
             for msg in messages:
